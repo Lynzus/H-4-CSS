@@ -4,13 +4,7 @@
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
-
 }
-/* 
-.topside {
-    background-color: green;
-} */
-
 .topside :nth-child(2){
     color: #B88940;
     font-size: 93px;
@@ -38,7 +32,6 @@
     font-weight: bolder;
     bottom: 190%;
     left: 46%;
-    
 }
 .central {
     margin: 150px 0 280px 0;
@@ -48,6 +41,27 @@ div article{
     background-color: #FFBD59;
     margin: 29px 20px 0 20px;
 }
+.lines {
+    position: relative;
+}
+.pics {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: -30px;
+    gap: 9px;
+}
+.pics div{
+    position: relative;
+}
+.pics img{
+    width: 165px;
+    height: 260px;
+}
 footer :nth-child(1){
     font-size: 45px;
     color: #B88940;
@@ -55,5 +69,28 @@ footer :nth-child(1){
 footer :nth-child(2){
     font-size: 19.5px;
     font-weight: 500;
-
+}
+.pics div:nth-child(1)::after{
+    position: absolute;
+    content: 'lorem . $200';
+    bottom: -13%;
+    left: 22%;
+    font-size: 18px;
+    font-weight: 600;
+}
+.pics div:nth-child(2)::after{
+    position: absolute;
+    content: 'lorem . $300';
+    bottom: -13%;
+    left: 22%;
+    font-size: 18px;
+    font-weight: 600;
+}
+.pics div:nth-child(3)::after{
+    position: absolute;
+    content: 'lorem . $400';
+    bottom: -13%;
+    left: 22%;
+    font-size: 18px;
+    font-weight: 600;
 }
